@@ -1,4 +1,4 @@
-import Logo from "../../public/Logo.svg";
+import Logo from "../../public/logo.svg";
 import Image from "next/image";
 export default function Navbar() {
   return (
