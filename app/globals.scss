@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    scroll-behavior: smooth;
+}
+.body{
+    margin: 0;
+    
+}
+.main-page{  
+    background-image: url("../public/Sans titre.png");
+    background-size: cover;
+    width: screen;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+.logo{
+    height: 80px;
+    width: 120px;
+}
+
+.icon-image{
+    height: 40px;
+    width: 40px;
+}
+.icon-text{
+    text-align: center;
+    font-size: 18px;
+    color: #3D585F;
+}
+
+.group-image{
+    background-image: url("../public/_mg_7769.jpg");
+    background-position: 0% 20%;
+    background-size: cover;  
+}
+
+.page-title{
+    position:absolute;
+    display: flex;
+    align-items: end;
+    gap: 20px;
+    width: fit-content;
+    text-wrap: nowrap;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 45px;
+    font-weight: 700;
+    
+    left: 0%;
+    
+}
+
+.title{
+    font-size: 60px;
+    font-style: italic;
+}
