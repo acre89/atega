@@ -4,9 +4,9 @@ export default function Navbar() {
   return (
     <>
       
-        <div className="fixed z-10 w-screen h-fit flex items-center justify-between bg-nav">
+        <div className="fixed z-50 w-screen h-fit flex items-center justify-center md:justify-between bg-nav">
           <Image src={Logo} className="logo" />
-          <ul className="flex text-white gap-24 pr-12 text-xl">
+          <ul className="hidden md:flex text-white gap-16 lg:gap-24 pr-12 text-xl">
                 <li><a href="#a-propos">A propos</a></li>
                 <li><a href="#expertise">Expertise</a></li>
                 <li><a href="#equipe">Equipe</a></li>
