@@ -17,7 +17,7 @@ export default function Home() {
       <Navbar />
       <div className="h-screen w-screen main-page flex items-center justify-center text-center ">
         <h1 className="px-24 text-white title">
-          Partenaire exclusif des dirigeants
+          Conseil financier engagé auprès des entrepreneurs
         </h1>
       </div>
       <div
@@ -73,46 +73,82 @@ export default function Home() {
           <h2 className="">Nos expertises</h2>
           <Image src={dots} className="md:block hidden" />
         </div>
-        <div className=" md:pl-40 pl-10 pr-10 flex flex-col md:flex-row justify-center  items-center gap-3">
-          <div className="flex flex-col gap-8">
+        <div className=" md:pl-40 pl-10 pr-10 flex flex-col md:flex-row justify-center items-start gap-3">
+          <div className="flex flex-col gap-8 w-10/12">
             <div className="">
               <h2 className="text-2xl pb-5 text-orange">Cession</h2>
               <p>
+                Atega Partners fournit un support stratégique et technique et
+                sur mesure durant toute l'opération, qu'il s'agisse d'une
+                cession partielle ou totale d'une entreprise, d'une filiale, ou
+                d'une branche d'activité, incluant la vente de titres ou de
+                fonds de commerce. Notre équipe élabore l'ensemble des documents
+                nécessaires au succès de l'opération. Nous explorons toutes les
+                possibilités de contreparties, même celles aux synergies moins
+                apparentes, et identifions les acquéreurs potentiels dont les
+                intérêts sont clairement alignés, sur le plan financier et
+                extra-financier.
+                <br /> <br />
+                Notre expertise en ingénierie financière et en négociation nous
+                permet d'établir la valeur de marché la plus précise. Nous
+                assurons une coordination étroite avec tous les acteurs
+                impliqués, de l'audit aux négociations, jusqu'au closing de
+                l'opération.
+                <br /> <br />
                 Identification d’acheteurs industriels ou financiers pour
                 réaliser des cessions totales ou partielles.
-                <br /> <br />
-                Préparation et mise en valeur de la société en vue de la
-                cession.
-                <br />
-                <br />
-                Objectifs : nouveaux projets, départ à la retraite, etc.
               </p>
             </div>
             <div className="">
               <h2 className="text-2xl pb-5 text-orange">Acquisition</h2>
               <p>
-                Expertise dans l’identification, l’évaluation et la réalisation
-                d'acquisitions stratégiques.
+                Nous offrons un soutien crucial pour les transactions de
+                croissance externe, telles que l'acquisition de titres ou de
+                fonds de commerce.
                 <br />
+                <br /> Atega Partners assiste les dirigeants dans l'élaboration
+                de la structure et la stratégie de croissance externe. Nous
+                dressons une liste de cibles potentielles basée sur les critères
+                définis par le client. Suite à une analyse minutieuse et à
+                l'approbation du client, nous engageons des discussions avec les
+                entreprises ciblées et négocions les lettres d'intention avec
+                leurs dirigeants.
                 <br />
-                Objectifs : acquérir de nouvelles compétences, élargir son
-                positionnement géographique, gagner des parts de marché, etc.
+                <br /> Notre compétence en structuration des transactions de
+                croissance externe nous permet d'améliorer la recherche de
+                financements, qu'ils soient sous forme de dette bancaire ou
+                d'apport en capital. Nous guidons les dirigeants à travers les
+                négociations avec les différentes parties prenantes et les
+                accompagnons à chaque étape du processus jusqu'à la finalisation
+                de l'opération. Expertise dans l’identification, l’évaluation et
+                la réalisation d'acquisitions stratégiques.
               </p>
             </div>
           </div>
-          <div className="">
+          <div className="pt-80 flex items-center justify-center ">
             <Image src={center} className="md:block hidden" />
           </div>
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-8 w-10/12">
             <div className="">
               <h2 className="text-2xl pb-5 text-orange">Levée de fonds</h2>
               <p>
-                Préparation de la documentation, mise en relation avec des
-                investisseurs industriels, privés ou fonds d’investissement.
+                Atega Partners se positionne en véritable chef d'orchestre pour
+                l'obtention de financements, en apportant un conseil stratégique
+                et financier et en vous connectant à notre vaste réseau
+                d'investisseurs privés et institutionnels.
                 <br />
+                <br /> Notre équipe guide les dirigeants dans la planification
+                de leur levée de fonds. Nous préparons tous les documents
+                nécessaires pour répondre aux attentes des investisseurs. Avant
+                les présentations, nous préparons soigneusement les dirigeants
+                pour maximiser leur performance lors des rencontres, que nous
+                organisons également. Nous négocions les conditions
+                d'investissement et soutenons nos clients à chaque étape du
+                processus, jusqu'à la conclusion de l'opération. <br />
                 <br />
-                Objectifs : développer un nouveau produit, obtenir un
-                financement pour faire croître son activité, etc.
+                Pleinement engagé dans votre opération, Atega Partners maximise
+                ses efforts afin d'atteindre les meilleurs résultats pour chaque
+                transaction.
               </p>
             </div>
             <div className="">
@@ -137,7 +173,10 @@ export default function Home() {
           mesure, assurant ainsi une réponse adaptée à votre demande.
         </div>
       </div>
-      <div id="equipe" className="md:h-fit min-h-screen relative pt-16 md:pt-40">
+      <div
+        id="equipe"
+        className="md:h-fit min-h-screen relative pt-16 md:pt-40"
+      >
         <div className="page-title md:top-40 pl-5 md:pl-0 pb-5 md:pb-0">
           <h2 className="text-nav">Notre équipe</h2>
           <Image src={dots} className="md:block hidden" />
