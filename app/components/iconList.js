@@ -8,8 +8,8 @@ import energie from "../../public/camion.svg";
 
 export default function List(){
     return (
-      <div className="w-full md:w-fit h-full flex flex-row md:block justify-around ">
-        <div className="flex flex-col md:flex-row flex-wrap gap-10 md:gap-24">
+      <div className="w-full md:w-fit h-full flex flex-row lg:block justify-around ">
+        <div className="flex flex-col lg:flex-row xl:flex-wrap gap-10 xl:gap-24">
           <div className="flex flex-col items-center gap-3 w-28">
             <div className="h-14 w-14 rounded-full bg-nav flex items-center justify-center">
               <Image src={cart} className="icon-image" />
@@ -29,8 +29,8 @@ export default function List(){
             <p className="icon-text">Transport & logistique</p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row md:pt-10 flex-wrap gap-10 md:gap-24">
-          <div className="flex flex-col items-center pb-7 md:pb-0  gap-3 w-28">
+        <div className="flex flex-col lg:flex-row lg:pt-10 flex-wrap gap-10 xl:gap-24">
+          <div className="flex flex-col items-center pb-7 lg:pb-0  gap-3 w-28">
             <div className="h-14 w-14 rounded-full bg-nav flex items-center justify-center">
               <Image src={tech} className="icon-image" />
             </div>
