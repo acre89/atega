@@ -3,7 +3,7 @@ import Associé from "../components/associeCard";
 import dots from "../../public/dots_underline.svg";
 import henri from "../../public/henri.jpg";
 import alfred from "../../public/alfred.jpg";
-import ilan from "../../public/ilan.jpeg";
+import ilan from "../../public/Ilan.jpeg";
 import logo_blanc from "../../public/logo2 le A.png";
 import Footer from "../components/footer";
 export default function Equipe(){
