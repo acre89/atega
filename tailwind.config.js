@@ -6,11 +6,6 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    colors: {
-      nav: "#3D585F",
-      white:"#FFFFFF",
-      orange:"#E6964B"
-    },
     screens: {
       sm: "640px",
       md: "768px",
@@ -19,6 +14,14 @@ module.exports = {
       "2xl": "1536px",
       "3xl": "1920px",
     },
+    extend: {
+      colors: {
+        nav: "#3D585F",
+        white: "#FFFFFF",
+        orange: "#E6964B",
+      },
+    },
   },
+
   plugins: [],
 };

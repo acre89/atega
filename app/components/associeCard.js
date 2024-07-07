@@ -6,10 +6,10 @@ export default function Associé(props) {
         <div className="h-48 w-48 rounded-full border-2 border-orange">
           <Image src={props.image} height={190} width={190}  className="rounded-full"  objectFit="cover"  />
         </div>
-        <h3 className="text-2xl font-bold">{props.nom}</h3>
-        <p className="text-center text-lg">{props.desc} </p>
-        <p className="text-center text-lg">{props.desc2}</p>
-        <p className="text-center text-lg">{props.ecole}</p>
+        <h3 className="text-xl font-bold">{props.nom}</h3>
+        <p className="text-center ">{props.desc} </p>
+        <p className="text-center ">{props.desc2}</p>
+        <p className="text-center ">{props.ecole}</p>
       </div>
     </>
   );
