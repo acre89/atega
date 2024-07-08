@@ -39,7 +39,7 @@ export default function Home() {
         </div>
         <div>
           <div className="h-screen ">
-            <div className="page-title-line  text-nav w-fit mt-10 ml-40 pt-16  pl-5 md:pl-0 pb-5 md:pb-0">
+            <div className="page-title-line  text-nav w-fit mt-10 ml-32 pt-16  pl-5 md:pl-0 pb-5 md:pb-0">
               <h2 className="">Nous découvrir</h2>
               <div className="h-0.5 w-16 bg-orange rounded-sm"></div>
             </div>

@@ -3,9 +3,11 @@ import Image from "next/image";
 import Logo from "../../public/Logo_nav.png";
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import Script from "next/script";
 
 export default function Navbar() {
-  const href_ = window.location.pathname;
+  const href_ = usePathname();
   console.log(href_);
   var [accueil, setAccueil] = useState(true);
   function checkAccueil(href_){
@@ -16,9 +18,8 @@ export default function Navbar() {
       setAccueil(true)
     }
   }  
-  window.onload = (event) =>{
-    //checkAccueil(href_)
-  }
+
+  
 
   async function handleNavbar(id){
     if (id == 0){
@@ -42,6 +43,7 @@ export default function Navbar() {
 
   return (
     <>
+    <Script onLoad={() => {checkAccueil(href_)}} />
       <div
         className={
           accueil

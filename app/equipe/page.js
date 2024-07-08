@@ -13,7 +13,7 @@ export default function Equipe(){
           id="equipe"
           className="2xl:w-[1536px]  2xl:mx-auto md:h-fit relative md:pt-24"
         >
-          <div className="page-title-line w-fit mt-10 ml-40  pl-5 md:pl-0 pb-5 md:pb-0">
+          <div className="page-title-line w-fit mt-10 ml-32  pl-5 md:pl-0 pb-5 md:pb-0">
             <h2 className="text-nav">Notre équipe</h2>
             <div className="h-0.5 w-16 bg-orange rounded-sm"></div>
           </div>
