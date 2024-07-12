@@ -27,31 +27,30 @@ export default function Home() {
           <Image
             src={grand_logo}
             height={250}
-            className="absolute -right-8 top-20"
+            className="absolute overflow-hidden -right-8 top-20"
           />
 
           <ul className="text-right  text-white liste-accueil italic list-none absolute bottom-8 pr-2 right-12 text-3xl">
             <li>Cession</li>
             <li>Acquisition</li>
             <li>Levée de fond</li>
-            <li>Conseil stratégie</li>
+            <li>Conseil stratégique</li>
           </ul>
         </div>
         <div>
           <div className="h-screen ">
             <div className="page-title-line  text-nav w-fit mt-10 ml-32 pt-16  pl-5 md:pl-0 pb-5 md:pb-0">
-              <h2 className="">Nous découvrir</h2>
+              <h2 className="">A propos</h2>
               <div className="h-0.5 w-16 bg-orange rounded-sm"></div>
             </div>
             <div className="flex mt-32 justify-center items-center">
               <div className="flex gap-10 relative">
                 <Link href={"/a-propos"}>
-                  <div className="bg-nav carte relative text-white p-6 w-72 h-48 flex flex-col  gap-6">
+                  <div className="bg-nav carte relative text-white px-6 pt-12 w-72 h-48 flex flex-col  gap-6">
                     <div className="flex gap-2 items-start ">
                       <div className="h-8 w-0.5 bg-orange rounded-sm"></div>
-                      <h2 className="text-2xl font-bold">A propos</h2>
+                      <h2 className="text-2xl font-bold">Présentation</h2>
                     </div>
-                    <p>Découvrir Atega Partners.</p>
                     <svg
                       className="absolute right-5 bottom-3"
                       width="60"
@@ -72,12 +71,11 @@ export default function Home() {
                   </div>
                 </Link>
                 <Link href={"/expertises"}>
-                  <div className="bg-nav carte relative text-white p-6 w-72 h-48 flex flex-col  gap-6">
+                  <div className="bg-nav carte relative text-white px-6 pt-12 w-72 h-48 flex flex-col  gap-6">
                     <div className="flex gap-2 items-start  ">
                       <div className="h-8 w-0.5 bg-orange rounded-sm"></div>
                       <h2 className="text-2xl font-bold">Nos expertises</h2>
                     </div>
-                    <p>Nos savoirs-faire.</p>
                     <svg
                       className="absolute right-5 bottom-3"
                       width="60"
@@ -98,12 +96,12 @@ export default function Home() {
                   </div>
                 </Link>
                 <Link href={"/equipe"}>
-                  <div className="bg-nav carte relative text-white p-6 w-72 h-48 flex flex-col  gap-6">
+                  <div className="bg-nav carte relative text-white px-6 pt-12 w-72 h-48 flex flex-col gap-6">
                     <div className="flex gap-2 items-start">
                       <div className="h-8 w-0.5 bg-orange rounded-sm"></div>
-                      <h2 className="text-2xl font-bold">L'équipe</h2>
+                      <h2 className="text-2xl font-bold">Notre équipe</h2>
                     </div>
-                    <p>Les associés fondateurs.</p>
+  
                     <svg
                       className="absolute right-5 bottom-3"
                       width="60"

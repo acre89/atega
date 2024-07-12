@@ -112,7 +112,7 @@ em {
 }
 
 .nav-item {
-  width: 100px;
+  width: 140px;
   text-align: center;
 }
 
@@ -125,6 +125,9 @@ em {
   background-color: #e6964b;
   left: -10px;
   opacity: 0;
-  top: -10px;
+  bottom: -10px;
   transition: all 0.4s ease;
+}
+.ex-titre{
+  letter-spacing: 2px;
 }
