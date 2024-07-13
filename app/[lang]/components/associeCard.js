@@ -1,10 +1,10 @@
 import Image from "next/image";
-import mail from "../../public/mail.png";
-import telephone from "../../public/telephone.png";
+import mail from "../../../public/mail.png";
+import telephone from "../../../public/telephone.png";
 export default function Associé(props) {
   return (
     <>
-      <div className="p-5 h-fit md:h-[800px] lg:h-[800px] xl:[800px] row-span-1 bg-nav text-white flex flex-col gap-7 justify-start items-center">
+      <div className="p-5 h-fit md:h-[800px] lg:h-[800px] card-shadow xl:[800px] row-span-1 bg-nav text-white flex flex-col gap-7 justify-start items-center">
         <div className="h-48 w-48 rounded-full border-2 border-orange">
           <Image src={props.image} height={190} width={190}  className="rounded-full"  objectFit="cover"  />
         </div>
