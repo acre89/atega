@@ -8,18 +8,20 @@ export default function DivAnimate({ children, delay }) {
   const isInView = useInView(ref, { once: true });
   const [width, setWidth] = useState(700);
   if (typeof window !== "undefined") {
-    setWidth(useState(window.innerWidth));
+    const size = window.innerWidth;
     // Client-side-only code
-    useEffect(() => {
-      const handleResizeWindow = () => setWidth(window.innerWidth);
-      // subscribe to window resize event "onComponentDidMount"
-      window.addEventListener("resize", handleResizeWindow);
-      return () => {
-        // unsubscribe "onComponentDestroy"
-        window.removeEventListener("resize", handleResizeWindow);
-      };
-    }, []);
+  } else {
+    const size = 600;
   }
+  useEffect(() => {
+    const handleResizeWindow = () => setWidth(size);
+    // subscribe to window resize event "onComponentDidMount"
+    window.addEventListener("resize", handleResizeWindow);
+    return () => {
+      // unsubscribe "onComponentDestroy"
+      window.removeEventListener("resize", handleResizeWindow);
+    };
+  }, []);
   const breakpoint = 768;
   if (width > breakpoint) {
     return (
