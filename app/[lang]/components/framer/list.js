@@ -6,7 +6,7 @@ import { useRef, useEffect, useState } from "react";
 export default function ListAnimate({ children, delay }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
-  const [width, setWidth] = 700;
+  const [width, setWidth] = useState(700);
   if (typeof window !== "undefined") {
     setWidth(useState(window.innerWidth));
     // Client-side-only code
