@@ -30,7 +30,7 @@ export default async function Home({ params }) {
           </ul>
         </div>
         <div>
-          <div className="min-h-screen h-fit bg-nav">
+          <div className="min-h-screen h-fit pb-10 md:pb-0 bg-nav">
             <div className="page-title-line  text-white w-fit  ml-4 md:ml-10 lg:ml-24 pt-16  pl-5 md:pl-0 pb-5 md:pb-0">
               <h2 className="">{t.accueil.apropos}</h2>
               <div className="h-0.5 w-16 bg-orange rounded-sm"></div>

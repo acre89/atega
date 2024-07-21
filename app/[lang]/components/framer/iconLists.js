@@ -6,17 +6,21 @@ import { useRef } from "react";
 export default function IconListAnimate({ children, delay }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
-  const [width, setWidth] = useState(window.innerWidth);
+  const [width, setWidth] = 700;
+  if (typeof window !== "undefined") {
+    setWidth(useState(window.innerWidth));
+    // Client-side-only code
+    useEffect(() => {
+      const handleResizeWindow = () => setWidth(window.innerWidth);
+      // subscribe to window resize event "onComponentDidMount"
+      window.addEventListener("resize", handleResizeWindow);
+      return () => {
+        // unsubscribe "onComponentDestroy"
+        window.removeEventListener("resize", handleResizeWindow);
+      };
+    }, []);
+  }
   const breakpoint = 768;
-  useEffect(() => {
-    const handleResizeWindow = () => setWidth(window.innerWidth);
-    // subscribe to window resize event "onComponentDidMount"
-    window.addEventListener("resize", handleResizeWindow);
-    return () => {
-      // unsubscribe "onComponentDestroy"
-      window.removeEventListener("resize", handleResizeWindow);
-    };
-  }, []);
   if (width > breakpoint) {
     return (
       <ul
