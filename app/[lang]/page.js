@@ -12,17 +12,18 @@ export default async function Home({ params }) {
   return (
     <>
       <main className="overflow-hidden bg-[#ffffff]" id="scrollArea">
+        
         <div
-          className="h-screen overflow-y-hidden w-screen main-page flex items-center justify-center text-center"
+          className="h-screen overflow-y-hidden  w-screen main-page flex items-center justify-center text-center"
           id="front"
         >
           <Image
             src={grand_logo}
             height={250}
-            className="absolute overflow-hidden -right-8 top-20"
+            className=" relative z-20 block m-auto md:absolute md:overflow-hidden md:-right-8 md:top-20"
           />
 
-          <ul className="text-right  text-white liste-accueil italic list-none absolute bottom-8 pr-2 right-6 md:right-12 text-3xl">
+          <ul className="text-right z-20  text-white liste-accueil italic list-none absolute bottom-8 pr-2 right-6 md:right-12 text-3xl">
             <li>{t.accueil.cession}</li>
             <li>{t.accueil.acquisition}</li>
             <li>{t.accueil.levee}</li>

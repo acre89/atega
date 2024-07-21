@@ -14,7 +14,7 @@ export default async function RootLayout({ children, params }) {
   return (
     <html lang={params.lang}>
       <body className={pt_sans.className}>
-        <Navbar  dict={t.navbar}/>
+        <Navbar dict={t.navbar} />
         {children}
       </body>
     </html>
