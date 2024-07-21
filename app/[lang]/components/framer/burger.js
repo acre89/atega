@@ -84,7 +84,11 @@ export default function Burger({dict, langue}) {
         style={{ pointerEvents: isOpen ? "auto" : "none" }}
       >
         <motion.li className="submenu-item" variants={itemVariants}>
-          <Link onClick={() => setIsOpen(!isOpen)} href={`/${langue}/a-propos`}>
+          <Link
+            className="submenu-link"
+            onClick={() => setIsOpen(!isOpen)}
+            href={`/${langue}/a-propos`}
+          >
             {dict.presentation}
           </Link>
         </motion.li>
@@ -92,12 +96,17 @@ export default function Burger({dict, langue}) {
           <Link
             onClick={() => setIsOpen(!isOpen)}
             href={`/${langue}/expertises`}
+            className="submenu-link"
           >
             {dict.expertises}
           </Link>
         </motion.li>
         <motion.li className="submenu-item" variants={itemVariants}>
-          <Link onClick={() => setIsOpen(!isOpen)} href={`/${langue}/equipe`}>
+          <Link
+            className="submenu-link"
+            onClick={() => setIsOpen(!isOpen)}
+            href={`/${langue}/equipe`}
+          >
             {dict.equipe}
           </Link>
         </motion.li>

@@ -140,7 +140,7 @@ em {
 
 .menu {
   position: absolute;
-  width: 300px;
+  width: 285px;
   border-radius: 0;
 
 }
@@ -162,7 +162,7 @@ em {
 .submenu-list,
 .submenu-item {
   list-style: none;
-  padding: 10px;
+
 }
 
 .submenu-button {
@@ -173,4 +173,26 @@ em {
   width: auto;
   display: flex;
   align-items: center;
+}
+.submenu-link{
+  display: block;
+  padding: 10px;
+  width: 300px;
+  position: relative;
+  transition: all 0.1s ease;
+}
+.submenu-link:focus{
+  background-color: #3d585f;
+  color: white;
+}
+.submenu-link:not(:last-of-type)::after{
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 1px;
+  background-color: #EEEEEE;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
