@@ -3,14 +3,14 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import DivAnimate from "./framer/div";
 
-export default async function AccueilLien({dict}){
+export default function AccueilLien({dict}){
     const pathname = usePathname();
     const langue = pathname.split("/")[1];
     return (
-      <div className="flex gap-10 relative">
+      <div className="flex flex-col md:flex-row gap-10 md:gap-4 xl:gap-10 relative">
         <DivAnimate>
           <Link href={`/${langue}/a-propos`}>
-            <div className="bg-nav carte relative text-white px-6 pt-12 w-72 h-48 flex flex-col  gap-6">
+            <div className="bg-white border border-orange carte relative text-nav px-6 pt-12 w-72 h-48 flex flex-col  gap-6">
               <div className="flex gap-2 items-start ">
                 <div className="h-8 w-0.5 bg-orange rounded-sm"></div>
                 <h2 className="text-2xl font-bold">{dict.presentation}</h2>
@@ -37,7 +37,7 @@ export default async function AccueilLien({dict}){
         </DivAnimate>
         <DivAnimate delay={"0.6s"}>
           <Link href={`/${langue}/expertises`}>
-            <div className="bg-nav carte relative text-white px-6 pt-12 w-72 h-48 flex flex-col  gap-6">
+            <div className="bg-white border border-orange carte relative text-nav px-6 pt-12 w-72 h-48 flex flex-col  gap-6">
               <div className="flex gap-2 items-start  ">
                 <div className="h-8 w-0.5 bg-orange rounded-sm"></div>
                 <h2 className="text-2xl font-bold">{dict.expertises}</h2>
@@ -64,7 +64,7 @@ export default async function AccueilLien({dict}){
         </DivAnimate>
         <DivAnimate delay={"1.2s"}>
           <Link href={`/${langue}/equipe`}>
-            <div className="bg-nav carte relative text-white px-6 pt-12 w-72 h-48 flex flex-col gap-6">
+            <div className="bg-white border border-orange carte relative text-nav px-6 pt-12 w-72 h-48 flex flex-col gap-6">
               <div className="flex gap-2 items-start">
                 <div className="h-8 w-0.5 bg-orange rounded-sm"></div>
                 <h2 className="text-2xl font-bold">{dict.equipe}</h2>

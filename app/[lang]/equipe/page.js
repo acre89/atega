@@ -12,13 +12,13 @@ export default async function Equipe({ params }) {
     <>
       <div
         id="equipe"
-        className="2xl:w-[1536px]  2xl:mx-auto md:h-fit relative md:pt-24"
+        className="2xl:w-[1536px]  2xl:mx-auto md:h-fit relative pt-24"
       >
         <TitleAnimate>
           <h2 className="text-nav">{t.navbar.equipe}</h2>
           <div className="h-0.5 w-16 bg-orange rounded-sm"></div>
         </TitleAnimate>
-        <div className="mx-28 my-16 flex flex-col md:grid gap-24 md:gap-3 md:grid-cols-3 md:grid-rows-1">
+        <div className="mx-6 md:mx-12 lg:mx-28 my-16 flex flex-col items-center lg:grid gap-16 lg:gap-3 lg:grid-cols-3 lg:grid-rows-1">
           <DivAnimate delay={"0.6s"}>
             <Associé
               image={henri}

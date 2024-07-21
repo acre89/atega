@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import Logo from "../../../public/Logo_nav.png";
 import { useState } from "react";
@@ -7,6 +8,8 @@ import { usePathname } from "next/navigation";
 import Script from "next/script";
 import linkedin from "../../../public/linkedin.svg";
 import { useRouter } from "next/navigation";
+import Burger from "./framer/burger";
+
 
 export default function Navbar({ dict }) {
   const pathname = usePathname();
@@ -33,7 +36,7 @@ export default function Navbar({ dict }) {
     checkAccueil(pathname);
   };
 
-  async function handleNavbar(id) {
+   async function handleNavbar(id) {
     if (id == 0) {
       document.getElementById("selector").style.left = "-10px";
       document.getElementById("selector").style.opacity = "0";
@@ -49,18 +52,24 @@ export default function Navbar({ dict }) {
     }
   }
 
+  
+
   return (
     <>
       <Script onReady={checkAccueil(pathname)} />
       <div className="fixed  z-50 w-screen h-fit  bg-nav">
         <div
-          className="2xl:w-[1536px] shadow-xl 2xl:mx-auto flex items-center justify-center md:justify-between"
+          className="2xl:w-[1536px] relative shadow-xl 2xl:shadow-none 2xl:mx-auto flex items-center justify-between"
           id="nav-bar"
         >
+          <div className="lg:hidden block relative pl-6 h-[30px] w-auto">
+            <Burger dict={dict} langue={langue} />
+          </div>
+
           <Link href={`/${langue}`} onClick={() => handleNavbar(0)}>
             <Image height={80} src={Logo} className="logo" />
           </Link>
-          <ul className="hidden relative md:flex text-white gap-16  pr-48 text-xl">
+          <ul className="hidden relative lg:flex text-white gap-16  pr-48 text-xl">
             <div className="selector" id="selector"></div>
             <li className="nav-item">
               <Link
@@ -84,7 +93,7 @@ export default function Navbar({ dict }) {
               </Link>
             </li>
           </ul>
-          <div className=" absolute right-6 flex pr-6">
+          <div className=" lg:absolute relative right-6 flex lg:pr-6">
             <a
               href="https://www.linkedin.com/company/atega-partners/"
               target="_blank"
@@ -94,7 +103,7 @@ export default function Navbar({ dict }) {
           </div>
           <select
             onChange={changeLanguage}
-            className="lang-select absolute right-32 top-8"
+            className="lang-select absolute right-20 lg:right-32 top-8"
             defaultValue={langue}
           >
             <option value="fr">🇫🇷</option>

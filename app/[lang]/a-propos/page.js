@@ -11,14 +11,14 @@ export default async function Propos({ params }) {
     <>
       <div
         id="a-propos"
-        className="pt-10 md:pt-24 h-fit w-screen 2xl:w-[1536px] pb-24  2xl:mx-auto text-nav relative "
+        className="pt-24 h-fit w-screen 2xl:w-[1536px] pb-24  2xl:mx-auto text-nav relative "
       >
         <TitleAnimate>
           <h2 className="">{t.navbar.presentation}</h2>
           <div className="h-0.5 w-16 bg-orange rounded-sm"></div>
         </TitleAnimate>
 
-        <div className="mx-28 mt-16">
+        <div className=" mx-6 md:mx-12 lg:mx-28 mt-16">
           <div className="">
             <DivAnimate>
               <p className="pb-24 text-center text-xl ">{t.apropos.intro}</p>
@@ -56,7 +56,7 @@ export default async function Propos({ params }) {
               </div>
               <div className="flex flex-col">
                 <DivAnimate delay={"0.6s"}>
-                  <h2 className="pb-8 font-bold text-3xl">
+                  <h2 className="pb-8 mt-10 md:mt-0 font-bold text-3xl">
                     {t.apropos.secteurs}
                   </h2>
                 </DivAnimate>

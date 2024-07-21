@@ -8,13 +8,13 @@ export default async function Expertises({ params }) {
     <>
       <div
         id="expertise"
-        className="2xl:w-[1536px]  2xl:mx-auto pt-10 md:pt-24 relative pb-24  text-nav "
+        className="2xl:w-[1536px]  2xl:mx-auto pt-24 relative pb-24  text-nav "
       >
         <TitleAnimate>
           <h2 className="">{t.navbar.expertises}</h2>
           <div className="h-0.5 w-16 bg-orange rounded-sm"></div>
         </TitleAnimate>
-        <div className="mx-28 mt-16">
+        <div className="mx-6 md:mx-12 lg:mx-28 mt-16">
           <div className=" w-full h-fit relative flex flex-col md:grid gap-20 md:grid-cols-2 md:grid-rows-2">
             <DivAnimate delay={"0.6s"}>
               <div className=" ">
@@ -81,7 +81,7 @@ export default async function Expertises({ params }) {
               </div>
             </DivAnimate>
             <DivAnimate delay={"2.4s"}>
-              <div className="">
+              <div className="pb-10 md:pb-0">
                 <h2 className="text-2xl ex-titre pb-2 text-center font-bold">
                   {t.expertise.reorga_titre}
                 </h2>

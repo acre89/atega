@@ -82,16 +82,7 @@
 .liste-accueil li:not(:last-child) {
   margin-bottom: 12px;
 }
-@media (max-width: 768px) {
-  .page-title {
-    position: relative;
-    display: flex;
-    width: fit-content;
-    text-wrap: nowrap;
-    transform: rotate(0deg);
-    writing-mode: horizontal-tb;
-  }
-}
+
 .title {
   font-size: 60px;
   font-style: italic;
@@ -101,6 +92,7 @@ em {
   font-weight: bold;
   font-style: normal;
 }
+
 .contact-image {
   width: 55%;
   height: 100%;
@@ -108,9 +100,13 @@ em {
   background-size: cover;
   overflow-x: hidden;
   background-position: 30% 35%;
-
 }
-
+@media (max-width: 768px) {
+  .contact-image{
+    background-image: none;
+    width: 0%;
+  }
+}
 .nav-item {
   width: 140px;
   text-align: center;
@@ -140,4 +136,41 @@ em {
 }
 .list-item:not(:first-of-type){
   padding-top: 20px;
+}
+
+.menu {
+  position: absolute;
+  width: 300px;
+  border-radius: 0;
+
+}
+
+.submenu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: white;
+  margin-top: 25px;
+  margin-left: -15px;
+}
+
+.submenu-item{
+  color: #3d585f;
+  display: block;
+}
+
+.submenu-list,
+.submenu-item {
+  list-style: none;
+  padding: 10px;
+}
+
+.submenu-button {
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  width: auto;
+  display: flex;
+  align-items: center;
 }

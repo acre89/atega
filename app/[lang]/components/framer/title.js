@@ -8,7 +8,7 @@ export default function TitleAnimate({children}){
 
     return (
       <div
-        className="page-title-line w-fit mt-10 ml-24  pl-5 md:pl-0 pb-5 md:pb-0"
+        className="page-title-line w-fit mt-10 ml-4 md:ml-10 lg:ml-24 pl-5 md:pl-0 pb-5 md:pb-0"
         ref={ref}
         style={{
           transform: isInView ? "none" : "translateX(-50px)",

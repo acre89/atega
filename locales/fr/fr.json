@@ -12,7 +12,7 @@
     "apropos": "A propos"
   },
   "apropos": {
-    "intro": "Société indépendante de conseil financier spécialisée dans les opérations stratégiques des PME, Atega Partners accompagne ses lients dans leurs projets de cession, transmission, acquisition, levée de fond, recomposition de capital",
+    "intro": "Société indépendante de conseil financier spécialisée dans les opérations stratégiques des PME, Atega Partners accompagne ses lients dans leurs projets de cession, transmission, acquisition, levée de fond, recomposition de capital.",
     "missions":"Nos missions", 
     "bullet10": "Concrétiser les",
     "bullet11": "ambitions",
@@ -44,8 +44,8 @@
   },
   "equipe": {
     "subtitle": "Co-fondateur & associé",
-    "henri": "Henri est principalement en charge des opérations de cession et de transmission",
-    "alfred": "Alfred s'occupe principalement des levées de fonds ainsi que des acquisitions ciblées",
+    "henri": "Henri est principalement en charge des opérations de cession et de transmission.",
+    "alfred": "Alfred s'occupe principalement des levées de fonds ainsi que des acquisitions ciblées.",
     "ilan": "Ilan intervient dans les opérations à effet de levier et recompositions de capital.",
     "master": "Master finance"
   },

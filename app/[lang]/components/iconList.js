@@ -16,20 +16,20 @@ export default function List({ dict }) {
             <div className="h-10 w-10 rounded-full bg-nav flex items-center justify-center">
               <Image src={cart} className="icon-image" />
             </div>
-            <p className="icon-text">{dict.biens}</p>
+            <p className="icon-text min-h-[54px]">{dict.biens}</p>
           </IconListAnimate>
         </li>
         <IconListAnimate delay={"1.2s"}>
           <div className="h-10 w-10 rounded-full bg-nav flex items-center justify-center">
             <Image src={plant} className="icon-image" />
           </div>
-          <p className="icon-text">{dict.industrie}</p>
+          <p className="icon-text min-h-[54px]">{dict.industrie}</p>
         </IconListAnimate>
         <IconListAnimate delay={"1.4s"}>
           <div className="h-10 w-10 rounded-full bg-nav flex items-center justify-center">
             <Image src={camion} className="icon-image" />
           </div>
-          <p className="icon-text">{dict.transport}</p>
+          <p className="icon-text min-h-[54px]">{dict.transport}</p>
         </IconListAnimate>
       </ul>
       <ul className="flex flex-col lg:flex-row lg:pt-10 flex-wrap gap-10 xl:gap-10">
@@ -37,19 +37,19 @@ export default function List({ dict }) {
           <div className="h-10 w-10 rounded-full bg-nav flex items-center justify-center">
             <Image src={tech} className="icon-image" />
           </div>
-          <p className="icon-text">Tech</p>
+          <p className="icon-text min-h-[54px]">Tech</p>
         </IconListAnimate>
         <IconListAnimate delay={"1.8s"}>
           <div className="h-10   w-10 rounded-full bg-nav flex items-center justify-center">
             <Image src={energy} className="icon-image " />
           </div>
-          <p className="icon-text">{dict.energie}</p>
+          <p className="icon-text min-h-[54px]">{dict.energie}</p>
         </IconListAnimate>
         <IconListAnimate delay={"2s"}>
           <div className="h-10 w-10 rounded-full bg-nav flex items-center justify-center">
             <Image src={sante} className="icon-image" />
           </div>
-          <p className="icon-text">{dict.sante}</p>
+          <p className="icon-text min-h-[54px]">{dict.sante}</p>
         </IconListAnimate>
       </ul>
     </div>
