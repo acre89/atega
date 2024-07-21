@@ -60,7 +60,7 @@ export default function Burger({dict, langue}) {
         </svg>
       </motion.button>
       <motion.ul
-        className="submenu-list card-shadow"
+        className="submenu-list "
         variants={{
           open: {
             clipPath: "inset(0% 0% 0% 0% )",

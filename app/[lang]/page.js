@@ -23,7 +23,7 @@ export default async function Home({ params }) {
             className=" relative z-20 block m-auto md:absolute md:overflow-hidden md:-right-8 md:top-20"
           />
 
-          <ul className="text-right z-20  text-white liste-accueil italic list-none absolute bottom-8 pr-2 right-6 md:right-12 text-3xl">
+          <ul className="text-right z-20  text-white liste-accueil italic list-none absolute bottom-2 md:bottom-8 pr-2 right-6 md:right-12 text-3xl">
             <li>{t.accueil.cession}</li>
             <li>{t.accueil.acquisition}</li>
             <li>{t.accueil.levee}</li>
