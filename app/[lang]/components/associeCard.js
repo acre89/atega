@@ -20,11 +20,13 @@ export default function Associé(props) {
         </div>
         <p className="text-center min-h-[48px] ">{props.desc}</p>
         <p className="text-center pb-4">{props.ecole}</p>
-        <div className="md:flex hidden md:flex-col md:items-center md:justify-start">
+        <div className="md:flex pt-10 hidden md:flex-col md:items-center md:justify-start">
           <Image src={telephone} height={45} />
-          <p className="text-center pb-4">{props.telephone}</p>
+          <p className="text-center pb-10 pt-2">{props.telephone}</p>
+          <a href={`mailto: ${props.mail}`} className="flex flex-col items-center">
           <Image src={mail} height={45} />
-          <p className="text-center">{props.mail}</p>
+          <p className="text-center pt-2">{props.mail}</p>
+          </a>
         </div>
       </div>
     </>

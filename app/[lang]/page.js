@@ -12,23 +12,24 @@ export default async function Home({ params }) {
   return (
     <>
       <main className="overflow-hidden bg-[#ffffff]" id="scrollArea">
-        
         <div
-          className="h-screen overflow-y-hidden  w-screen main-page flex items-center justify-center text-center"
+          className="h-screen   w-screen main-page flex items-center justify-center text-center"
           id="front"
         >
-          <Image
-            src={grand_logo}
-            height={250}
-            className=" relative z-20 block m-auto md:absolute md:overflow-hidden md:-right-8 md:top-20"
-          />
+          <div className="w-screen relative 2xl:w-[1536px] h-screen 2xl:w- overflow-x-hidden">
+            <Image
+              src={grand_logo}
+              height={250}
+              className=" relative z-20 hidden md:block m-auto md:absolute md:overflow-hidden md:-right-8 md:top-20"
+            />
 
-          <ul className="text-right z-20  text-white liste-accueil italic list-none absolute bottom-12 md:bottom-8 pr-2 right-6 md:right-12 text-3xl">
-            <li>{t.accueil.cession}</li>
-            <li>{t.accueil.acquisition}</li>
-            <li>{t.accueil.levee}</li>
-            <li>{t.accueil.conseil}</li>
-          </ul>
+            <ul className="text-right z-20  text-white liste-accueil italic list-none absolute bottom-14 pb-14 md:pb-0 md:bottom-8 pr-2 right-6 md:right-12 text-3xl">
+              <li>{t.accueil.cession}</li>
+              <li>{t.accueil.acquisition}</li>
+              <li>{t.accueil.levee}</li>
+              <li>{t.accueil.conseil}</li>
+            </ul>
+          </div>
         </div>
         <div className="md:hidden block">
           <div className="min-h-screen h-fit pb-10 md:pb-0 bg-nav">
@@ -39,7 +40,7 @@ export default async function Home({ params }) {
             <div className="flex mt-8 md:mt-32 justify-center items-center">
               <AccueilLien dict={t.navbar} />
             </div>
-          </div> 
+          </div>
         </div>
 
         {/* <div className="h-screen relative">

@@ -10,7 +10,7 @@ import IconListAnimate from "./framer/iconLists";
 export default function List({ dict }) {
   return (
     <div className="w-full md:w-fit h-full flex flex-row lg:inline-block justify-around">
-      <ul className="flex flex-col lg:flex-row xl:flex-wrap gap-10 xl:gap-10">
+      <ul className="flex flex-col lg:flex-row xl:flex-wrap gap-10 xl:gap-20">
         <li>
           <IconListAnimate delay={"1s"}>
             <div className="h-10 w-10 rounded-full bg-nav flex items-center justify-center">
@@ -32,7 +32,7 @@ export default function List({ dict }) {
           <p className="icon-text min-h-[54px]">{dict.transport}</p>
         </IconListAnimate>
       </ul>
-      <ul className="flex flex-col lg:flex-row lg:pt-10 flex-wrap gap-10 xl:gap-10">
+      <ul className="flex flex-col lg:flex-row lg:pt-10 flex-wrap gap-10 xl:gap-20">
         <IconListAnimate delay={"1.6s"}>
           <div className="h-10 w-10 rounded-full bg-nav flex items-center justify-center">
             <Image src={tech} className="icon-image" />
