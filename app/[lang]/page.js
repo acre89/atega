@@ -23,15 +23,15 @@ export default async function Home({ params }) {
             className=" relative z-20 block m-auto md:absolute md:overflow-hidden md:-right-8 md:top-20"
           />
 
-          <ul className="text-right z-20  text-white liste-accueil italic list-none absolute bottom-2 md:bottom-8 pr-2 right-6 md:right-12 text-3xl">
+          <ul className="text-right z-20  text-white liste-accueil italic list-none absolute bottom-12 md:bottom-8 pr-2 right-6 md:right-12 text-3xl">
             <li>{t.accueil.cession}</li>
             <li>{t.accueil.acquisition}</li>
             <li>{t.accueil.levee}</li>
             <li>{t.accueil.conseil}</li>
           </ul>
         </div>
-        <div>
-          {/* <div className="min-h-screen h-fit pb-10 md:pb-0 bg-nav">
+        <div className="md:hidden block">
+          <div className="min-h-screen h-fit pb-10 md:pb-0 bg-nav">
             <div className="page-title-line  text-white w-fit  ml-4 md:ml-10 lg:ml-24 pt-16  pl-5 md:pl-0 pb-5 md:pb-0">
               <h2 className="">{t.accueil.apropos}</h2>
               <div className="h-0.5 w-16 bg-orange rounded-sm"></div>
@@ -39,7 +39,7 @@ export default async function Home({ params }) {
             <div className="flex mt-8 md:mt-32 justify-center items-center">
               <AccueilLien dict={t.navbar} />
             </div>
-          </div> */}
+          </div> 
         </div>
 
         {/* <div className="h-screen relative">
