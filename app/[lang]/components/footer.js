@@ -17,7 +17,7 @@ export default function Footer(){
           </div>
           <div className="flex gap-4 items-center py-4">
             <Image height={40} src={telephone} />
-            <p>06 11 22 33 44</p>
+            <p>+33 7 86 44 05 93</p>
           </div>
         </div>
         <div className="contact-image relative flex"></div>

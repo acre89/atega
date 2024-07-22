@@ -7,12 +7,12 @@
   "accueil": {
     "cession": "Cession",
     "acquisition": "Acquisition",
-    "levee": "Levée de fond",
+    "levee": "Levée de fonds",
     "conseil": "Conseil stratégique",
     "apropos": "A propos"
   },
   "apropos": {
-    "intro": "Société indépendante de conseil financier spécialisée dans les opérations stratégiques des PME, Atega Partners accompagne ses lients dans leurs projets de cession, transmission, acquisition, levée de fond, recomposition de capital.",
+    "intro": "Société indépendante de conseil financier spécialisée dans les opérations stratégiques des PME, Atega Partners vous accompagne dans vos projets de cession, transmission, acquisition, levée de fond et recomposition de capital.",
     "missions":"Nos missions", 
     "bullet10": "Concrétiser les",
     "bullet11": "ambitions",
@@ -29,9 +29,9 @@
     "bullet52": "se focaliser sur leurs activités",
     "bullet53": "opérationnelles",
     "secteurs": "Secteurs couverts",
-    "encart1": "Atega Partners vous accompagne en apportant un",
-    "encart2": "conseil financier",
-    "encart3": "quotidien et ",
+    "encart1": "Atega Partners vous apporte un",
+    "encart2": "conseil financier quotidien",
+    "encart3": " et ",
     "encart4": "personnalisé",
     "encart5": "tout au long de notre mission à vos côtés."
   },
@@ -44,7 +44,7 @@
   },
   "equipe": {
     "subtitle": "Co-fondateur & associé",
-    "henri": "Henri est principalement en charge des opérations de cession et de transmission.",
+    "henri": "Henri est majoritairement en charge des opérations de cession et de transmission.",
     "alfred": "Alfred s'occupe principalement des levées de fonds ainsi que des acquisitions ciblées.",
     "ilan": "Ilan intervient dans les opérations à effet de levier et recompositions de capital.",
     "master": "Master finance"
