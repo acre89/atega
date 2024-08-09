@@ -11,7 +11,7 @@ export default async function Propos({ params }) {
     <>
       <div
         id="a-propos"
-        className="pt-24 h-fit w-screen 2xl:w-[1536px] pb-24  2xl:mx-auto text-nav relative "
+        className="pt-24 h-fit overflow-x-hidden w-screen 2xl:w-[1536px] pb-24  2xl:mx-auto text-nav relative "
       >
         <TitleAnimate>
           <h2 className="">{t.navbar.presentation}</h2>
@@ -21,8 +21,9 @@ export default async function Propos({ params }) {
         <div className=" mx-6 md:mx-12 lg:mx-28 mt-16">
           <div className="">
             <DivAnimate>
-              <p className="pb-24 text-center text-xl ">{t.apropos.intro}</p>
+              <p className="pb-24 full-para text-xl">{t.apropos.intro}</p>
             </DivAnimate>
+            "
             <div className="flex flex-col md:flex-row md:justify-between pb-5 md:pb-16 ">
               <div className="w-fit">
                 <DivAnimate>
@@ -75,7 +76,7 @@ export default async function Propos({ params }) {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer dict={t.footer} />
     </>
   );
 }

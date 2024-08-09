@@ -1,6 +1,7 @@
 import { PT_Sans } from "next/font/google";
 import "../globals.scss";
 import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 import { getDictionary } from "./dictionaries";
 const pt_sans = PT_Sans({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -16,6 +17,7 @@ export default async function RootLayout({ children, params }) {
       <body className={pt_sans.className}>
         <Navbar dict={t.navbar} />
         {children}
+        
       </body>
     </html>
   );

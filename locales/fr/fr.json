@@ -12,8 +12,8 @@
     "apropos": "A propos"
   },
   "apropos": {
-    "intro": "Société indépendante de conseil financier spécialisée dans les opérations stratégiques des PME, Atega Partners vous accompagne dans vos projets de cession, transmission, acquisition, levée de fonds et réorganisation de capital.",
-    "missions":"Nos missions", 
+    "intro": "Société indépendante de conseil financier spécialisée dans les opérations stratégiques des PME, Atega Partners vous accompagne dans vos projets de cession, transmission, acquisition, levée de fonds et recomposition de capital.",
+    "missions": "Nos missions",
     "bullet10": "Concrétiser les",
     "bullet11": "ambitions",
     "bullet12": "des dirigeants-actionnaires",
@@ -117,5 +117,16 @@
     "encart6": "assurant ainsi une réponse",
     "encart7": "adaptée",
     "encart8": "à votre demande."
+  },
+  "mentions": {
+    "titre": "Mentions légales",
+    "texte1": "Site édité par Atega Partners (117 avenue des Champs-Élysées 75008 Paris) RCS de Paris : 930 195 375",
+    "texte2": "Responsable de la publication : Henri de Bourrousse",
+    "texte3": "Site créé par Alexandre Cresci",
+    "texte4": "En application de la loi du 11 mars 1957 (art. 41) et du code de la propriété intellectuelle du 1er juillet 1992, toute reproduction, totale ou partielle, du contenu de ce site, par quelque procédé que ce soit, sans autorisation expresse de l’éditeur, est interdite."
+  },
+  "footer": {
+    "texte1": "Atega Partners, Société par actions simplifiée, ayant son siège social situé au 117 avenue des Champs Elysées - 75008 Paris, immatriculée au Registre du Commerce et des Sociétés de Paris sous le numéro d’identification unique 930 195 375.",
+    "texte2": "Mentions légales"
   }
 }

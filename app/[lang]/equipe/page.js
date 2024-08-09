@@ -54,7 +54,7 @@ export default async function Equipe({ params }) {
           </DivAnimate>
         </div>
       </div>
-      <Footer />
+        <Footer dict={t.footer} />
     </>
   );
 }

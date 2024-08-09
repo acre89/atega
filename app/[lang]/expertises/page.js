@@ -120,7 +120,7 @@ export default async function Expertises({ params }) {
           </DivAnimate>
         </div>
       </div>
-      <Footer />
+      <Footer dict={t.footer} />
     </>
   );
 }

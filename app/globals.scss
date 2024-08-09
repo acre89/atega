@@ -148,7 +148,6 @@ em {
   position: absolute;
   width: 285px;
   border-radius: 0;
-
 }
 
 .submenu-list {
@@ -207,4 +206,8 @@ em {
   .home-gradient{
   background: linear-gradient(180deg, rgba(18,17,17,0) 53%, rgba(18,17,17,0.8197872899159664) 88%);
   }
+}
+.full-para{
+  text-align: justify;
+  text-align-last: center;
 }

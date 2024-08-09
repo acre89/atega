@@ -1,11 +1,9 @@
 import Image from "next/image";
-import Footer from "./components/footer";
 import grand_logo from "../../public/logo2 le A.png";
-import Link from "next/link";
 import { getDictionary } from "./dictionaries";
-import DivAnimate from "./components/framer/div";
-
 import AccueilLien from "./components/accueilLiens";
+import FooterWhite from "./components/footerWhite";
+import ListAnimate from "./components/framer/list";
 export default async function Home({ params }) {
   let t = await getDictionary(params.lang);
   
@@ -13,7 +11,7 @@ export default async function Home({ params }) {
     <>
       <main className="overflow-hidden bg-[#ffffff]" id="scrollArea">
         <div
-          className="h-screen   w-screen main-page flex items-center justify-center text-center"
+          className="h-screen w-screen main-page flex items-center justify-center text-center"
           id="front"
         >
           <div className="w-screen relative 2xl:w-[1536px] h-screen 2xl:w- overflow-x-hidden">
@@ -22,16 +20,19 @@ export default async function Home({ params }) {
               height={250}
               className=" relative z-20 hidden md:block m-auto md:absolute md:overflow-hidden md:-right-8 md:top-20"
             />
-
-            <ul className="text-right z-20  text-white liste-accueil italic list-none absolute bottom-14 pb-14 md:pb-0 md:bottom-8 pr-2 right-6 md:right-12 text-3xl">
-              <li>{t.accueil.cession}</li>
-              <li>{t.accueil.acquisition}</li>
-              <li>{t.accueil.levee}</li>
-              <li>{t.accueil.conseil}</li>
-            </ul>
+            <div className="w-full h-full flex justify-center items-center pt-12">
+              <ul className="md:text-right z-20 text-center  text-white liste-accueil italic list-none md:absolute bottom-14 pb-14 md:pb-0 md:bottom-8 pr-2 right-6 md:right-12 text-2xl sm:text-3xl">
+                <ListAnimate>{t.accueil.cession}</ListAnimate>
+                <ListAnimate delay={"0.2s"}>
+                  {t.accueil.acquisition}
+                </ListAnimate>
+                <ListAnimate delay={"0.4s"}>{t.accueil.levee}</ListAnimate>
+                <ListAnimate delay={"0.6s"}>{t.accueil.conseil}</ListAnimate>
+              </ul>
+            </div>
           </div>
         </div>
-        <div className="md:hidden block">
+        <div className="block">
           <div className="min-h-screen h-fit pb-10 md:pb-0 bg-nav">
             <div className="page-title-line  text-white w-fit  ml-4 md:ml-10 lg:ml-24 pt-16  pl-5 md:pl-0 pb-5 md:pb-0">
               <h2 className="">{t.accueil.apropos}</h2>
@@ -68,7 +69,7 @@ export default async function Home({ params }) {
         </div>
       </div> */}
       </main>
-      <Footer />
+      <FooterWhite dict={t.footer} />
     </>
   );
 }

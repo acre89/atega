@@ -2,20 +2,19 @@
 
 import Image from "next/image";
 import Logo from "../../../public/Logo_nav.png";
-import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Script from "next/script";
 import linkedin from "../../../public/linkedin.svg";
 import { useRouter } from "next/navigation";
 import Burger from "./framer/burger";
-
+import Country from "./framer/countrySelect";
 
 export default function Navbar({ dict }) {
   const pathname = usePathname();
   function checkAccueil(pathname) {
     let pathname_lang = pathname.slice(3);
-    if (pathname_lang == "/") {
+    if (pathname_lang == "/" || pathname_lang == "/mentions") {
         handleNavbar(0);
     } else if (pathname_lang == "/a-propos") {
       handleNavbar(1);
@@ -67,7 +66,11 @@ export default function Navbar({ dict }) {
             <Burger dict={dict} langue={langue} />
           </div>
 
-          <Link href={`/${langue}`} className="z-50" onClick={() => handleNavbar(0)}>
+          <Link
+            href={`/${langue}`}
+            className="z-50"
+            onClick={() => handleNavbar(0)}
+          >
             <Image height={80} src={Logo} className="logo" />
           </Link>
           <ul className="hidden relative lg:flex text-white gap-16  pr-48 text-xl">
