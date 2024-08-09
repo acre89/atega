@@ -3,6 +3,7 @@ import "../globals.scss";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import { getDictionary } from "./dictionaries";
+import { Analytics } from "@vercel/analytics/react";
 const pt_sans = PT_Sans({ subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata = {
