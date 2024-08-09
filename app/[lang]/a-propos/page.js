@@ -23,7 +23,6 @@ export default async function Propos({ params }) {
             <DivAnimate>
               <p className="pb-24 full-para text-xl">{t.apropos.intro}</p>
             </DivAnimate>
-            "
             <div className="flex flex-col md:flex-row md:justify-between pb-5 md:pb-16 ">
               <div className="w-fit">
                 <DivAnimate>
