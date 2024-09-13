@@ -2,7 +2,8 @@
   "navbar": {
     "presentation": "Présentation",
     "expertises": "Nos expertises",
-    "equipe": "Notre équipe"
+    "equipe": "Notre équipe", 
+    "reseau": "Notre réseau d'experts"
   },
   "accueil": {
     "cession": "Cession",
@@ -128,5 +129,15 @@
   "footer": {
     "texte1": "Atega Partners, Société par actions simplifiée, ayant son siège social situé au 117 avenue des Champs Elysées - 75008 Paris, immatriculée au Registre du Commerce et des Sociétés de Paris sous le numéro d’identification unique 930 195 375.",
     "texte2": "Mentions légales"
+  }, 
+  "reseau":{
+    "eric1": "Eric est co-fondateur de LGM Group, société de conseil en ingénierie spécialisée notamment dans les secteurs de l’aéronautique, de la défense et de l’énergie.", 
+    "eric2": "Depuis 2023, il est président du conseil de surveillance de LGM Group.",
+    "eric3": "Eric est diplômé de CentraleSupélec.", 
+    "francoise1": "Médecin spécialisé en méthodologie, Françoise, a exercé des fonctions de directeur médical au sein de groupes internationaux, notamment GSK et EISAI.", 
+    "francoise2": "Depuis 10 ans, elle conseille des laboratoires pharmaceutiques sur leur stratégie médicale et a assuré des missions pour le LEEM, syndicat des industries du médicament.", 
+    "talabor1": "Talabor est CEO et co-fondateur d’Octo Finances. Il est également président d’Octo Groupe.", 
+    "talabor2": "Il a débuté sa carrière comme vendeur obligataire chez Dupont-Denant puis chez Du Bouzet (Groupe BNP Paribas).", 
+    "talabor3": "Talabor est diplômé de l'EDHEC et titulaire d’un MBA de Kellogg Northwestern University."
   }
 }

@@ -7,8 +7,8 @@ import { Analytics } from "@vercel/analytics/react";
 const pt_sans = PT_Sans({ subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata = {
-  title: "Atega",
-  description: "Atega Partners",
+  title: "Atega Partners",
+  description: "Atega Partners, atega-partners.com, Banque d'affaires",
 };
 
 export default async function RootLayout({ children, params }) {

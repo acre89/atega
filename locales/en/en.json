@@ -2,7 +2,8 @@
   "navbar": {
     "presentation": "Presentation",
     "expertises": "Our expertise",
-    "equipe": "Our team"
+    "equipe": "Our team", 
+    "reseau": "Senior Advisors"
   },
   "accueil": {
     "cession": "Sell-side",
@@ -19,7 +20,7 @@
     "bullet12": " a reality",
     "bullet20": "Value",
     "bullet21": "the professional assets of entrepreneurs",
-    "bullet30": "Providing",
+    "bullet30": "Provide",
     "bullet31": "daily, comprehensive",
     "bullet32": "and",
     "bullet33": "exclusive support",
@@ -33,7 +34,7 @@
     "encart2": "daily",
     "encart3": "and ",
     "encart4": "personalized financial advice",
-    "encart5": "throughout our mission alongside you"
+    "encart5": "throughout our mission alongside you."
   },
   "liste": {
     "biens": "Consumer goods",
@@ -124,9 +125,19 @@
     "texte2": "Person responsible for the publication : Henri de Bourrousse",
     "texte3": "Website created by Alexandre Cresci",
     "texte4": "In application of the law of 11 March 1957 (art. 41) and the intellectual property code of 1 July 1992, any reproduction, in whole or in part, of the content of this site, by any process whatsoever, without the express authorisation of the publisher, is prohibited."
-  }, 
-  "footer":{
+  },
+  "footer": {
     "texte1": "Atega Partners, a SAS (simplified joint stock company) with its registered office at 117 avenue des Champs Elysées - 75008 Paris, registered with the Paris Trade and Companies Register under the unique identification number 930 195 375.",
     "texte2": "Legal notice"
+  },
+  "reseau": {
+    "eric1": "Eric is co-founder of LGM Group, an engineering consultancy specializing in the aerospace, defense and energy sectors.",
+    "eric2": "Since 2023, he has been Chairman of the Supervisory Board of LGM Group.",
+    "eric3": "Eric is a graduate of CentraleSupélec.",
+    "francoise1": "A doctor specializing in methodology, Françoise has held medical director positions with international groups such as GSK and EISAI.",
+    "francoise2": "For the past 10 years, she has been advising pharmaceutical companies on their medical strategy, and has carried out assignments for LEEM, the French pharmaceutical industry association.",
+    "talabor1": "Talabor is CEO and co-founder of Octo Finances. He is also Chairman of Octo Groupe.",
+    "talabor2": "He began his career as a bond salesman at Dupont-Denant, then at Du Bouzet (BNP Paribas Group).",
+    "talabor3": "Talabor is a graduate of EDHEC business school and holds an MBA from Kellogg Northwestern University."
   }
 }

@@ -1,10 +1,18 @@
 import Image from "next/image";
 import mail from "../../../public/mail.png";
 import telephone from "../../../public/telephone.png";
+import linkedin from "../../../public/linkedincard.svg";
 export default function Associé(props) {
   return (
     <>
-      <div className="p-5 h-fit md:h-[750px] w-full sm:w-[400px] md:w-[500px] md:mx-auto lg:mx-none lg:w-auto lg:h-[750px] card-shadow row-span-1 bg-nav text-white flex flex-col gap-7 justify-start items-center">
+      <div className="p-5 h-fit md:h-[750px] w-full sm:w-[400px] md:w-[500px] md:mx-auto lg:mx-none lg:w-auto lg:h-[750px] card-shadow relative row-span-1 bg-nav text-white flex flex-col gap-7 justify-start items-center">
+        <a href={props.linkedin} target="_blank" className="absolute right-5">
+          <Image
+            height={40}
+            className="border rounded border-orange"
+            src={linkedin}
+          />
+        </a>
         <div className="h-48 w-48 rounded-full border-2 border-orange">
           <Image
             src={props.image}
@@ -23,9 +31,12 @@ export default function Associé(props) {
         <div className="md:flex  hidden md:flex-col md:items-center md:justify-start">
           <Image src={telephone} height={45} />
           <p className="text-center pb-10 pt-2">{props.telephone}</p>
-          <a href={`mailto: ${props.mail}`} className="flex flex-col items-center">
-          <Image src={mail} height={45} />
-          <p className="text-center pt-2">{props.mail}</p>
+          <a
+            href={`mailto: ${props.mail}`}
+            className="flex flex-col items-center"
+          >
+            <Image src={mail} height={45} />
+            <p className="text-center pt-2">{props.mail}</p>
           </a>
         </div>
       </div>
