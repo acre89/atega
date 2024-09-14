@@ -20,8 +20,8 @@ export default function Expert(props) {
             objectFit="cover"
           />
         </div>
-        <a href={props.linkedin} target="_blank" className="absolute right-5">
-        <Image height={40} className="border rounded border-orange" src={linkedin} />
+        <a href={props.linkedin} target="_blank" className="absolute right-3">
+        <Image height={30} className="border rounded border-orange" src={linkedin} />
         </a>
         <div className="flex flex-col gap-1">
           <h3 className="text-xl text-center font-bold">{props.nom}</h3>

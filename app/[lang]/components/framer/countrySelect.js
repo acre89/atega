@@ -21,10 +21,15 @@ export default function Country({checkAccueil}) {
   const pathname = usePathname();
   const router = useRouter();
   const langue = pathname.split("/")[1];
+
+  const testList= pathname.split("/")
+  testList[1] = ''; 
+
+  console.log(testList.slice(1).join("/"))
   const changeLanguage = (locale) => {
     const segments = pathname.split("/");
     segments[1] = locale;
-    console.log(segments.join("/"));
+    console.log(segments)
     document.cookie = `NEXT_LOCALE=${locale}; path=/`;
     router.push(segments.join("/"));
     checkAccueil(pathname);
@@ -33,7 +38,7 @@ export default function Country({checkAccueil}) {
     <motion.nav
       initial={false}
       animate={isOpen ? "open" : "closed"}
-      className="absolute right-20 lg:right-32 top-8"
+      className="lang-menu right-20 lg:right-32 top-8"
     >
       <motion.button
         whileTap={{ scale: 0.97 }}
@@ -43,7 +48,7 @@ export default function Country({checkAccueil}) {
         <Image src={france} height={20} />
       </motion.button>
       <motion.ul
-        className="submenu-list "
+        className="lang-submenu-list "
         variants={{
           open: {
             clipPath: "inset(0% 0% 0% 0% )",
@@ -68,7 +73,7 @@ export default function Country({checkAccueil}) {
       >
         <motion.li className="submenu-item" variants={itemVariants}>
           <button
-            className="submenu-link"
+            className="lang-submenu-link"
             onClick={() => changeLanguage('fr')}
           >
             <Image src={france} height={30} />
@@ -76,8 +81,8 @@ export default function Country({checkAccueil}) {
         </motion.li>
         <motion.li className="submenu-item" variants={itemVariants}>
           <button
-            className="submenu-link"
-            onClick={() => changeLanguage('uk')}
+            className="lang-submenu-link"
+            onClick={() => changeLanguage('en')}
           >
             <Image src={uk} height={30} />
           </button>

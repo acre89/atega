@@ -3,7 +3,7 @@
     "presentation": "Presentation",
     "expertises": "Our expertise",
     "equipe": "Our team", 
-    "reseau": "Senior Advisors"
+    "reseau": "Our senior advisors"
   },
   "accueil": {
     "cession": "Sell-side",
@@ -131,13 +131,13 @@
     "texte2": "Legal notice"
   },
   "reseau": {
-    "eric1": "Eric is co-founder of LGM Group, an engineering consultancy specializing in the aerospace, defense and energy sectors.",
+    "eric1": "Eric is the co-founder of LGM Group, an engineering consultancy firm specializing in the aerospace, defense and energy sectors.",
     "eric2": "Since 2023, he has been Chairman of the Supervisory Board of LGM Group.",
-    "eric3": "Eric is a graduate of CentraleSupélec.",
-    "francoise1": "A doctor specializing in methodology, Françoise has held medical director positions with international groups such as GSK and EISAI.",
-    "francoise2": "For the past 10 years, she has been advising pharmaceutical companies on their medical strategy, and has carried out assignments for LEEM, the French pharmaceutical industry association.",
-    "talabor1": "Talabor is CEO and co-founder of Octo Finances. He is also Chairman of Octo Groupe.",
-    "talabor2": "He began his career as a bond salesman at Dupont-Denant, then at Du Bouzet (BNP Paribas Group).",
-    "talabor3": "Talabor is a graduate of EDHEC business school and holds an MBA from Kellogg Northwestern University."
+    "eric3": "Eric holds a degree from CentraleSupélec.",
+    "francoise1": "Françoise is a physician specialized in methodology. She has held medical director roles in international groups, including GSK and EISAI.",
+    "francoise2": "For the past 10 years, she has been advising pharmaceutical companies on their medical strategy and has undertaken assignments for LEEM, the trade association for the pharmaceutical industry.",
+    "talabor1": "Talabor is the CEO and co-founder of Octo Finances. He is also Chairman of Octo Groupe.",
+    "talabor2": "He began his career as a bond salesman at Dupont-Denant and then at Du Bouzet (BNP Paribas Group).",
+    "talabor3": "Talabor holds a degree from EDHEC business school and an MBA from Kellogg Northwestern University."
   }
 }

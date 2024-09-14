@@ -97,6 +97,7 @@ export default function Navbar({ dict }) {
               </Link>
             </li>
           </ul>
+          {/* <Country /> */}
           <div className=" lg:absolute relative right-6 flex lg:pr-6">
             <a
               href="https://www.linkedin.com/company/atega-partners/"

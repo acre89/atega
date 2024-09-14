@@ -11,10 +11,10 @@ export default async function Propos({ params }) {
     <>
       <div
         id="a-propos"
-        className="pt-24 h-fit overflow-x-hidden w-screen 2xl:w-[1536px] pb-24  2xl:mx-auto text-nav relative "
+        className="2xl:w-[1536px] overflow-hidden 2xl:mx-auto min-h-screen h-fit relative py-24"
       >
         <TitleAnimate>
-          <h2 className="">{t.navbar.presentation}</h2>
+          <h2 className="text-nav">{t.navbar.presentation}</h2>
           <div className="h-0.5 w-16 bg-orange rounded-sm"></div>
         </TitleAnimate>
 

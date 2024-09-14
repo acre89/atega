@@ -6,9 +6,9 @@ export default function Associé(props) {
   return (
     <>
       <div className="p-5 h-fit md:h-[750px] w-full sm:w-[400px] md:w-[500px] md:mx-auto lg:mx-none lg:w-auto lg:h-[750px] card-shadow relative row-span-1 bg-nav text-white flex flex-col gap-7 justify-start items-center">
-        <a href={props.linkedin} target="_blank" className="absolute right-5">
+        <a href={props.linkedin} target="_blank" className="absolute right-3">
           <Image
-            height={40}
+            height={30}
             className="border rounded border-orange"
             src={linkedin}
           />
