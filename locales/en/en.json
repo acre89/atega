@@ -2,7 +2,7 @@
   "navbar": {
     "presentation": "Presentation",
     "expertises": "Our expertise",
-    "equipe": "Our team", 
+    "equipe": "Our team",
     "reseau": "Our senior advisors"
   },
   "accueil": {
@@ -51,7 +51,7 @@
     "master": "Master's degree in Finance"
   },
   "expertise": {
-    "cession_titre": "Cession",
+    "cession_titre": "Sell-side",
     "cession1": "Atega Partners provides a",
     "cession2": "strategic and technical support throughout the transaction",
     "cession3": ", whether the divestiture is a partial or total sale of a company, a subsidiary or a branch of activity, including the sale of shares or goodwill.",
@@ -63,7 +63,7 @@
     "cession9": " close coordination",
     "cession10": "with all the players involved, from the audit to the negotiations, right up to",
     "cession11": " closing of the transaction",
-    "acquisition_titre": "Acquisition",
+    "acquisition_titre": "Buy-side",
     "acquisition1": "We provide crucial support for external growth transactions, such as the acquisition of shares or goodwill. Atega Partners assists management in",
     "acquisition2": "developing the structure and strategy for external growth",
     "acquisition3": "We draw up a",
