@@ -18,7 +18,7 @@ export default async function Propos({ params }) {
           <div className="h-0.5 w-16 bg-orange rounded-sm"></div>
         </TitleAnimate>
 
-        <div className=" mx-6 md:mx-12 lg:mx-28 mt-16">
+        <div className="text-nav mx-6 md:mx-12 lg:mx-28 mt-16">
           <div className="">
             <DivAnimate>
               <p className="pb-24 full-para text-xl">{t.apropos.intro}</p>
