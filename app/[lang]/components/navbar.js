@@ -9,6 +9,7 @@ import linkedin from "../../../public/linkedin.svg";
 import { useRouter } from "next/navigation";
 import Burger from "./framer/burger";
 import Country from "./framer/countrySelect";
+import { useEffect } from "react";
 
 export default function Navbar({ dict }) {
   const pathname = usePathname();
@@ -52,7 +53,7 @@ export default function Navbar({ dict }) {
       }
   }}
 
-  
+  useEffect(() => checkAccueil(pathname), []); 
 
   return (
     <>
@@ -97,7 +98,7 @@ export default function Navbar({ dict }) {
               </Link>
             </li>
           </ul>
-          {/* <Country /> */}
+          <Country />
           <div className=" lg:absolute relative right-6 flex lg:pr-6">
             <a
               href="https://www.linkedin.com/company/atega-partners/"
@@ -106,14 +107,14 @@ export default function Navbar({ dict }) {
               <Image src={linkedin} height={35} />
             </a>
           </div>
-          <select
+          {/* <select
             onChange={changeLanguage}
             className="lang-select absolute right-20 lg:right-32 top-8"
             defaultValue={langue}
           >
             <option value="fr">🇫🇷</option>
             <option value="en">🇬🇧</option>
-          </select>
+          </select> */}
         </div>
       </div>
     </>

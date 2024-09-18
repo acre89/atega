@@ -167,11 +167,11 @@ em {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background: white;
   align-items: center;
-  border: 1px solid #EEEEEE;
+  border: 1px solid rgba(238, 238, 238, 0.4);
   padding: 10px;
   margin-top: 10px;
+  border-radius: 4px;
 }
 .submenu-item{
   color: #3d585f;
@@ -193,6 +193,14 @@ em {
   display: flex;
   align-items: center;
 }
+.lang-submenu-button{
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .submenu-link{
   display: block;
   padding: 10px;
@@ -208,7 +216,8 @@ em {
   transition: all 0.1s ease;
 }
 .submenu-link:focus, .lang-submenu-link:focus{
-  background-color: #3d585f;
+
+  border-radius: 2px;
   color: white;
 }
 .submenu-link:not(:last-of-type)::after{

@@ -16,7 +16,7 @@ const itemVariants = {
   closed: { opacity: 0, y: 20, transition: { duration: 0.2 } },
 };
 
-export default function Country({checkAccueil}) {
+export default function Country() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
@@ -27,12 +27,17 @@ export default function Country({checkAccueil}) {
 
   console.log(testList.slice(1).join("/"))
   const changeLanguage = (locale) => {
-    const segments = pathname.split("/");
-    segments[1] = locale;
-    console.log(segments)
-    document.cookie = `NEXT_LOCALE=${locale}; path=/`;
-    router.push(segments.join("/"));
-    checkAccueil(pathname);
+    if (langue != locale){
+      const segments = pathname.split("/");
+      segments[1] = locale;
+      console.log(segments);
+      document.cookie = `NEXT_LOCALE=${locale}; path=/`;
+      router.push(segments.join("/"));
+    }
+    else{
+      setIsOpen(false); 
+    }
+    
   };
   return (
     <motion.nav
@@ -43,12 +48,12 @@ export default function Country({checkAccueil}) {
       <motion.button
         whileTap={{ scale: 0.97 }}
         onClick={() => setIsOpen(!isOpen)}
-        className="submenu-button"
+        className="lang-submenu-button"
       >
-        <Image src={france} height={20} />
+        <Image src={langue == "fr" ? france : uk} height={20} />
       </motion.button>
       <motion.ul
-        className="lang-submenu-list "
+        className="lang-submenu-list bg-gray-400/60"
         variants={{
           open: {
             clipPath: "inset(0% 0% 0% 0% )",
