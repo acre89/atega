@@ -22,16 +22,14 @@ export function middleware(request) {
   const pathname = request.nextUrl.pathname;
   // Vérifiez si la langue est déjà dans l'URL
   if (i18n.locales.some(locale => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`)) {
-    console.log("Redirection"); 
     return NextResponse.next();
   }
 
   // Récupérez la langue depuis les cookies ou déduisez-la
   let locale = getLocale(request) || i18n.defaultLocale;
-  console.log(`changement de locale: ${locale}  = `)
+
   // Redirigez vers la nouvelle URL avec la langue
   const url = new URL(`/${locale}${pathname}`, request.url);
-  console.log('middleware: '+url)
   return NextResponse.redirect(url);
 }
 
