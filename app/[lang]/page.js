@@ -4,9 +4,10 @@ import { getDictionary } from "./dictionaries";
 import AccueilLien from "./components/accueilLiens";
 import FooterWhite from "./components/footerWhite";
 import ListAnimate from "./components/framer/list";
+import DivAnimate from "./components/framer/div";
 export default async function Home({ params }) {
   let t = await getDictionary(params.lang);
-  
+
   return (
     <>
       <main className="overflow-hidden bg-[#ffffff]" id="scrollArea">
@@ -14,7 +15,7 @@ export default async function Home({ params }) {
           className="h-screen w-screen main-page flex items-center justify-center text-center"
           id="front"
         >
-          <div className="w-screen relative 2xl:w-[1536px] h-screen 2xl:w- overflow-x-hidden">
+          <div className="w-screen relative 2xl:w-[1536px] h-screen overflow-x-hidden">
             <Image
               src={grand_logo}
               height={250}
@@ -33,13 +34,22 @@ export default async function Home({ params }) {
           </div>
         </div>
         <div className="block">
-          <div className="min-h-screen h-fit pb-10 md:pb-0 bg-nav">
-            <div className="page-title-line  text-white w-fit  ml-4 md:ml-10 lg:ml-24 pt-16  pl-5 md:pl-0 pb-5 md:pb-0">
-              <h2 className="">{t.accueil.apropos}</h2>
-              <div className="h-0.5 w-16 bg-orange rounded-sm"></div>
-            </div>
-            <div className="flex mt-8 md:mt-32 justify-center items-center">
-              <AccueilLien dict={t.navbar} />
+          <div className="min-h-screen  h-fit pb-10 md:pb-0 bg-nav">
+            <div className="2xl:w-[1536px] block 2xl:mx-auto">
+              <div className="page-title-line  text-white w-fit  ml-4 md:ml-10 lg:ml-24 pt-16  pl-5 md:pl-0 pb-5 md:pb-0">
+                <h2 className="">{t.accueil.apropos}</h2>
+                <div className="h-0.5 w-16 bg-orange rounded-sm"></div>
+              </div>
+              <div className="mx-6 md:mx-12 lg:mx-28 mt-8 lg:mt-16 ">
+                <DivAnimate>
+                  <p className=" text-white full-para italic text-xl">
+                    {t.apropos.intro}
+                  </p>
+                </DivAnimate>
+              </div>
+              <div className="flex mt-8 md:mt-32 justify-center items-center">
+                <AccueilLien dict={t.navbar} />
+              </div>
             </div>
           </div>
         </div>
