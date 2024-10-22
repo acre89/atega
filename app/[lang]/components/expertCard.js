@@ -18,6 +18,7 @@ export default function Expert(props) {
             width={190}
             className="rounded-full"
             objectFit="cover"
+            alt="photo de nos experts"
           />
         </div>
         <a href={props.linkedin} target="_blank" className="absolute right-3">

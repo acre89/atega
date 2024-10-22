@@ -72,7 +72,7 @@ export default function Navbar({ dict }) {
             className="z-50"
             onClick={() => handleNavbar(0)}
           >
-            <Image height={80} src={Logo} className="logo" />
+            <Image height={80} src={Logo} className="logo" alt="logo de l'entreprise" />
           </Link>
           <ul className="hidden relative lg:flex text-white gap-16  pr-48 text-xl">
             <div className="selector" id="selector"></div>

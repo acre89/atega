@@ -18,6 +18,7 @@ export default async function Home({ params }) {
           <div className="w-screen relative 2xl:w-[1536px] h-screen overflow-x-hidden">
             <Image
               src={grand_logo}
+              alt="logo de l'entreprise"
               height={250}
               className=" relative z-20 hidden md:block m-auto md:absolute md:overflow-hidden md:-right-8 md:top-20"
             />

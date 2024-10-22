@@ -45,9 +45,15 @@
   },
   "equipe": {
     "subtitle": "Co-founder & Partner",
-    "henri": "Henri is primarily in charge of sales and transmission operations.",
-    "alfred": "Alfred mainly handles fundraising and targeted acquisitions.",
+    "henri": "Henri is in charge of sales and transmission operations.",
+    "henri2": "Before co-founding Atega Partners, Henri gained over 5 years of experience in mergers and acquisitions at Eponyme Partners, D&A Corporate Finance, and Qovetia, as well as in private equity at Ardian.",
+    "henri3": "He graduated from Audencia.",
+    "alfred": "Alfred handles fundraising and targeted acquisitions.",
+    "alfred2": "He began his career in mergers and acquisitions at Medicis Partners before joining the investment bank Equiteq. He also worked at Eponyme Partners and the investment fund Mantra Investment Partners.",
+    "alfred3": "Alfred is a graduate of emlyon.",
     "ilan": "Ilan is involved in leveraged transactions and capital reorganizations.",
+    "ilan2": "After a first experience as a financial analyst at Alstom, he joined D&A Corporate Finance and then Eponyme Partners, where he carried out several LBO transactions on behalf of business leaders.",
+    "ilan3": "Ilan graduated from Toulouse Business School.",
     "master": "Master's degree in Finance"
   },
   "expertise": {

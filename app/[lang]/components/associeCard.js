@@ -5,7 +5,7 @@ import linkedin from "../../../public/linkedincard.svg";
 export default function Associé(props) {
   return (
     <>
-      <div className="p-5 h-fit md:h-[750px] w-full sm:w-[400px] md:w-[500px] md:mx-auto lg:mx-none lg:w-auto lg:h-[750px] card-shadow relative row-span-1 bg-nav text-white flex flex-col gap-7 justify-start items-center">
+      <div className="p-5 lg:px-2 xl:px-5 h-fit md:h-[840px] w-full sm:w-[400px] md:w-[500px] md:mx-auto lg:mx-none lg:w-auto lg:h-[900px] xl:h-[840px] card-shadow relative row-span-1 bg-nav text-white flex flex-col gap-7 justify-start items-center">
         <a href={props.linkedin} target="_blank" className="absolute right-3">
           <Image
             height={30}
@@ -20,6 +20,7 @@ export default function Associé(props) {
             width={190}
             className="rounded-full"
             objectFit="cover"
+            alt="photo de nos collaborateurs"
           />
         </div>
         <div className="flex flex-col gap-1">
@@ -27,7 +28,8 @@ export default function Associé(props) {
           <p className="text-center text-sm italic">{props.sous_titre} </p>
         </div>
         <p className="text-center min-h-[48px] ">{props.desc}</p>
-        <p className="text-center pb-4">{props.ecole}</p>
+        <p className="text-center min-h-[120px]">{props.desc2}</p>
+        <p className="text-center pb-4 min-h-[24px]">{props.ecole}</p>
         <div className="md:flex  hidden md:flex-col md:items-center md:justify-start">
           <Image src={telephone} height={45} />
           <p className="text-center pb-10 pt-2">{props.telephone}</p>

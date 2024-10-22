@@ -10,21 +10,21 @@ export default function Footer({dict}){
     <div className="flex relative  shadow-xl w-full overflow-hidden h-fit  md:h-[400px] gap-0">
       <div className="bg-nav text-white w-full md:w-[45%] pl-0 md:pl-12 lg:pl-28  mt-0 pt-10 z-30 pb-10 md:pb-0 flex flex-col justify-start items-start">
         <div className="flex pl-4 md:pl-0 gap-2 md:gap-4 items-center">
-          <Image height={40} src={location} />
+          <Image height={40} src={location} alt="icone adresse" />
           <p>117 avenue des Champs-Elysées, 75008 Paris</p>
         </div>
         <a
           href="mailto:h.debourrousse@atega-partners.com"
           className="flex gap-2 md:gap-4 md:pl-0 pl-4 items-center pt-4"
         >
-          <Image height={40} src={mail} />
+          <Image height={40} src={mail} alt="icone mail" />
           <p>h.debourrousse@atega-partners.com</p>
         </a>
         <a
           href="tel:+33 7 86 44 05 93"
           className="flex gap-2 md:gap-4 md:pl-0 pl-4 items-center py-4"
         >
-          <Image height={40} src={telephone} />
+          <Image height={40} src={telephone} alt="icone telephone" />
           <p>+33 7 86 44 05 93</p>
         </a>
         <div className="text-sm pt-10 pb-5 mx-5 md:mx-0 text-justify">

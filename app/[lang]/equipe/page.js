@@ -35,7 +35,8 @@ export default async function Equipe({ params }) {
               nom="Henri de Bourrousse"
               sous_titre={t.equipe.subtitle}
               desc={t.equipe.henri}
-              ecole={t.equipe.master + " - " + "Audencia"}
+              desc2={t.equipe.henri2}
+              ecole={t.equipe.henri3}
               telephone="+33 7 86 44 05 93"
               mail="h.debourrousse@atega-partners.com"
               linkedin="https://www.linkedin.com/in/henri-de-bourrousse-539472120/"
@@ -47,7 +48,8 @@ export default async function Equipe({ params }) {
               nom="Alfred Vahe"
               sous_titre={t.equipe.subtitle}
               desc={t.equipe.alfred}
-              ecole={t.equipe.master + " - " + "EMLyon"}
+              desc2={t.equipe.alfred2}
+              ecole={t.equipe.alfred3}
               telephone="+33 6 51 08 27 08"
               mail="a.vahe@atega-partners.com"
               linkedin="https://www.linkedin.com/in/alfredvahe/"
@@ -59,7 +61,8 @@ export default async function Equipe({ params }) {
               nom="Ilan Didier"
               sous_titre={t.equipe.subtitle}
               desc={t.equipe.ilan}
-              ecole={t.equipe.master + " - " + "TBS Education"}
+              desc2={t.equipe.ilan2}
+              ecole={t.equipe.ilan3}
               telephone="+33 6 46 16 88 40"
               mail="i.didier@atega-partners.com"
               linkedin="https://www.linkedin.com/in/ilan-didier-438216176/"

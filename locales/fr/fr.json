@@ -45,17 +45,22 @@
   },
   "equipe": {
     "subtitle": "Co-fondateur & associé",
-    "henri": "Henri est majoritairement en charge des opérations de cession et de transmission.",
+    "henri": "Henri est en charge des opérations de cessions et de transmissions.",
+    "henri2": "Avant de co-fonder Atega Partners, Henri a cumulé plus de 5 ans d’expérience en fusions-acquisitions chez eponyme partners, D&A Corporate Finance et Qovetia ainsi qu’en fonds d’investissement chez Ardian.",
+    "henri3": "Il est diplômé d'Audencia.",
     "alfred": "Alfred s'occupe principalement des levées de fonds ainsi que des acquisitions ciblées.",
+    "alfred2": "Il a débuté sa carrière en fusions-acquisitions chez Medicis Partners avant de rejoindre la banque d’affaires Equiteq. Il a également travaillé au sein d’eponyme partners et du fonds d’investissement Mantra Investment Partners.",
+    "alfred3": "Alfred est diplômé de l’emlyon.",
     "ilan": "Ilan intervient dans les opérations à effet de levier et de réorganisation de capital.",
-    "master": "Master finance"
+    "ilan2": "Après une première expérience comme analyste financier chez Alstom, il rejoint D&A Corporate Finance puis eponyme partners où il réalise plusieurs opérations de LBO pour le compte de dirigeants d’entreprise.",
+    "ilan3": "Il est diplômé de Toulouse Business School."
   },
   "expertise": {
     "cession_titre": "Cession",
     "cession1": "Atega Partners fournit un",
     "cession2": "support stratégique, technique et sur-mesure durant toute l'opération",
     "cession3": ", qu'il s'agisse d'une cession partielle ou totale d'une entreprise, d'une filiale ou d'une branche d'activité, incluant la vente de titres ou de fonds de commerce.",
-    "cession4": "Notre équipe élabore l'ensemble des documents nécessaires au succès de l'opération. Nous explorons",
+    "cession4": "Notre équipe élabore l'ensemble des documents nécesstaires au succès de l'opération. Nous explorons",
     "cession5": "toutes les possibilités de contreparties",
     "cession6": ", même celles aux synergies moins apparentes, et identifions les acquéreurs potentiels dont les intérêts sont clairement alignés, sur le plan financier et extra-financier. Notre expertise en ingénierie financière et en négociation nous permet d'établir",
     "cession7": "la valeur de marché la plus précise",
